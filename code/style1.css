@@ -1,0 +1,351 @@
+.color{
+    background: rgb(134, 128, 128);
+}
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0; 
+  background-color: white; 
+  z-index: 1000; 
+  border-radius: 10px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+  }
+  nav li {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 0.9rem;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s ease;
+    padding: 20px 0;
+    list-style: none;
+    color: #353a8d;
+  }
+  nav li:first-child +li {
+    color: rgb(95, 4, 170);
+  }
+  nav li:first-child +li :before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: rgb(95, 4, 170);
+    transform: translateY(-20px);
+  }
+  nav li:hover:before {
+    content: "";
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    background: #353a8d;
+    transform: translateY(-20px);
+  }
+  nav li:last-child:before {
+    background: none;
+  }
+  #language {
+    background: rgba(128, 128, 128, 0.25);
+    border-radius: 50px;
+    padding: 8px 16px;
+  }
+  nav ul li a {
+    text-decoration: none;
+  }
+  header{
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0)), url(./assets/img/IMAGEPAGE2/ella-don-LBQdL30Ywuw-unsplash.jpg);
+    margin: 0;
+    padding: 0;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+  }
+
+  header h4{
+    color: #f39659;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 130%;
+    opacity: 0; 
+  transition: opacity 8s ease;
+  }
+  header h1{
+    overflow-wrap: break-word;
+    font-size: 250%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-bottom: 4%;
+  }
+  header p{
+    font-size: 140%;
+    font-family: 'Montserrat', sans-serif; 
+    color: white;
+    background-color: transparent;
+    opacity: 0; 
+    transform: translateX(-100%); 
+    transition: opacity 5s ease, transform 5s ease;
+  }
+header p, h1, h4{
+    transform: translateY(30px);
+    margin-left: 40px;
+}
+  .entre{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif; 
+    word-spacing: 30px;
+    margin-left: 35%;
+    letter-spacing: 5px;
+    transform: translateY(-3%);
+    color: #fff;
+}
+
+#intermediaire{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+section{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+.image{
+    display: block;
+    background-color:#353a8d;;
+    height: 43%;
+    width: 60%;
+}
+.images img{
+    height: 50%;
+    max-width: 100%;
+}
+.image1 {
+    display: block;
+    background-color: #353a8d;
+    height: 36%;
+    width: 60%;
+}
+.paragraphes{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+}
+.texte{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: beige;
+}
+.paragraphe1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140%;
+    color: white;
+}
+.paragraphe2 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140%;
+    color: white;
+}
+.deuxieme h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #f39659;
+    font-size: 250%;
+}
+.paragraphe1{
+    margin-right: 10px;
+}
+.paragraphe2{
+    margin-left: 35px;
+}
+section{
+     background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.658)), url(./assets/img/IMAGEPAGE2/headway-F2KRf_QfCqw-unsplash\ \(1\).jpg);
+     position: relative;
+     background-size: cover;
+     overflow: hidden;
+}
+.trait{
+     color: #fff;
+}
+.list p {
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.list h6 {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+.list .network {
+  margin: 20px 0 8px;
+}
+.footer-logos i {
+  font-size: 0.8rem;
+  margin: 0 12px 30px 0;
+}
+.copyright {
+  margin: 0;
+}
+footer {
+  background: rgb(15, 15, 15);
+  color: whitesmoke;
+  padding: 25px;
+  font-family:'Montserrat', sans-serif;
+}
+footer h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 32px;
+  margin-left: 40%;
+}
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+footer ul li{
+  list-style: none;
+}
+.network{
+  color: #353a8d;
+}
+#btnRetourHaut {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.up{
+  color: #f39659;
+  font-weight: 2000;
+  font-size: 50px;
+}
+@media screen and (max-width: 895px) {
+
+  header h4 {
+    font-size: 100%;
+    margin-bottom: 3%;
+  }
+  
+  header h1 {
+    font-size: 25px;
+    margin-bottom: 10%; 
+  }
+  
+  header p {
+    font-size: 14px; 
+    transform: translateY(10%);
+  }
+  .entre {
+    font-size: 90%;
+    margin-left: 20%; 
+  }
+  
+  section{
+    display: block;
+  }
+  .paragraphes {
+    font-size: 14px; 
+    flex-direction: column;
+  }
+  .paragraphe1 p{
+    margin-left: 10%;
+  }
+  .image{
+    margin-left: 20%;
+  }
+  .image1{
+    margin-left: 20%;
+  }
+  footer h3{
+    margin-right: 20%;
+    margin-left: 10%;
+  }
+  footer ul {
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  footer li {
+    margin: 5px;
+  }
+  #side-bar {
+    position: absolute;
+    width: 230px;
+    height: 100%;
+    background:white;
+    top: 0;
+    left: -230px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+  }
+  .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+  .toggle-btn span {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background:#353a8d;
+    display: block;
+    margin-top: 4px;
+    transition: 0.3s ease;
+  }
+  #side-bar.active {
+    left: 0;
+  }
+  
+  #side-bar.active nav ul{
+    left: 0; 
+}
+  nav{
+    top: 0; 
+    background-color: white; 
+    z-index: 1000; 
+    border-radius: 1px;
+  }
+ nav ul{
+ display: block;
+ }
+ nav li:first-child +li :before{
+  content: none;
+ }
+ nav li:hover:before{
+  content: none;
+ }
+  .active span {
+    position: absolute;
+  }
+  .active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .active span:nth-child(2) {
+    opacity: 0;
+  }
+  .active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .active ~ .main-header {
+    opacity: 0.3;
+  }
+}
+

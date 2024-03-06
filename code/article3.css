@@ -1,0 +1,217 @@
+#toute{
+    background: rgba(0, 0, 0, 0.87);
+}
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0; 
+    background-color: white; 
+    z-index: 1000; 
+    border-radius: 10px;
+    }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 5px;
+    }
+    nav li {
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 0.9rem;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s ease;
+      padding: 20px 0;
+      list-style: none;
+     color:  rgb(95, 4, 170);
+    }
+    nav li:first-child +li+li+li+li+li{
+      color: rgb(95, 4, 170);
+    }
+    nav li:first-child +li+li+li+li+li:before {
+      content: "";
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      background: rgb(95, 4, 170);
+      transform: translateY(-20px);
+    }
+    nav li:hover:before {
+      content: "";
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      background: rgb(95, 4, 170);
+      transform: translateY(-20px);
+    }
+    nav li:last-child:before {
+      background: none;
+    }
+    #language {
+      background: rgba(128, 128, 128, 0.25);
+      border-radius: 50px;
+      padding: 8px 16px;
+    }
+    nav ul li a {
+      text-decoration: none;
+  }
+  .corpuss{
+    margin-bottom: 10%;
+  }
+  .corpuss h1{
+    font-family:'Montserrat', sans-serif;
+    color: #353a8d;
+    text-align: center;
+    transform: translateY(40%);
+  }
+  .corpuss img{
+    transform: translateY(10%);
+    margin-left:40% ;
+    transition: transform 5s;
+  }
+  .corpuss img:hover {
+    transform: scale(1.1);
+  }
+  .corpuss h2{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 250%;
+    color: #f39659;
+  }
+  .corpuss p{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 250%;
+    color: white;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+footer {
+    background: rgb(15, 15, 15);
+    color: whitesmoke;
+    padding: 25px;
+    font-family:'Montserrat', sans-serif;
+  }
+  footer h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 32px;
+    margin-left: 40%;
+  }
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+ }
+  footer ul li{
+    list-style: none;
+  }
+  .network{
+    color: #353a8d;
+  }
+  #btnRetourHaut {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .up{
+    color: #f39659;
+    font-weight: 2000;
+    font-size: 50px;
+  }
+  @media screen and (max-width: 895px) {
+  
+    body{
+      font-size: 14px;
+    }
+    .corpuss img{
+      transform: translateX(-20%);
+  }
+  footer ul {
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  footer li {
+    margin: 5px;
+  }
+  #side-bar {
+    position: absolute;
+    width: 230px;
+    height: 100%;
+    background:white;
+    top: 0;
+    left: -230px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+  }
+  .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 240px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+  }
+  .toggle-btn span {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background:#353a8d;
+    display: block;
+    margin-top: 4px;
+    transition: 0.3s ease;
+    opacity: 0.5;
+  }
+  #side-bar.active {
+    left: 0;
+  }
+  
+  #side-bar.active nav ul{
+    left: 0; 
+  }
+  nav{
+    top: 0; 
+    background-color: white; 
+    z-index: 1000; 
+    border-radius: 1px;
+  }
+  nav ul{
+  display: block;
+  }
+  nav li:first-child +li+li+li+li+li:before{
+    content: none;
+  }
+  nav li:hover:before{
+  content: none;
+  }
+  .active span {
+    position: absolute;
+  }
+  .active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .active span:nth-child(2) {
+    opacity: 0;
+  }
+  .active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .active ~ .main-header {
+    opacity: 0.3;
+  }
+  }
